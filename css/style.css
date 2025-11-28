@@ -18,7 +18,7 @@ body {
 }
 
 main {
-  padding: 4rem 10rem;
+  padding: 4rem 15rem;
 }
 
 main header {
@@ -28,7 +28,7 @@ main header {
 
 main h1 {
   text-align: center;
-  margin: 4rem 0;
+  margin: 2rem 0;
   font-family: "Bricolage Grotesque";
   font-size: 4rem;
 }
@@ -56,12 +56,71 @@ main h1 {
   cursor: pointer;
 }
 
-.search input::placeholder{
+.search input::placeholder {
   color: var(--neutral0);
 }
 
 .information {
-  margin-top: 4rem;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.information .information-left {
+  width: 50rem;
+}
+.information .information-right {
+  background-color: green;
+}
+
+.information .information-left section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.information .information-left #information-statistic article {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--Neutral600);
+  width: 11.8rem;
+  height: 6rem;
+  border-radius: var(--raduis);
+}
+
+.information .information-left section article h5 {
+  color: var(--neutral200);
+}
+.information .information-left #information-statistic article span {
+  color: var(--neutral0);
+  font-size: 1.5rem;
+}
+
+.information .information-left #information-daily article {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--Neutral600);
+  width: 6rem;
+  height: 10rem;
+  border-radius: var(--raduis);
+}
+
+.information .information-left #information-daily article img {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.information .information-left #information-daily article div {
+  display: flex;
+  gap: 2rem;
+  color: var(--neutral200);
+  font-size: .9rem;
 }
 
 .attribution {
